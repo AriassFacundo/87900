@@ -7,16 +7,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 
+    <script src="https://kit.fontawesome.com/d6c212df1e.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="../assets/img/apple.JPG.webp" width="100px" alt="Logo Apple">
-            <img src="../assets/img/samsung.JPG.avif" width="100px" alt="Logo Samsung">
+    <header class="container-fluid d-flex flex-wrap justify-content-between align-items-center p-2">
+        <div class="d-flex gap-2">
+            <img src="../assets/img/apple.JPG.webp" class="img-fluid" alt="Logo Apple" style="max-width: 80px;">
+            <img src="../assets/img/samsung.JPG.avif" class="img-fluid" alt="Logo Samsung" style="max-width: 80px;">
         </div>
         <nav>
-            <ul>
+            <ul class="d-flex flex-wrap justify-content-center p-0 m-0">
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="./ofertas.html">OFERTAS</a></li>
                 <li><a href="./catalogo.html">CATALOGO</a></li>
@@ -25,17 +27,16 @@
             </ul>
         </nav>
     </header>
-    <main">
+
+    <main class="container text-center">
         <h1>Mi Carrito</h1>
         <h2>Ultimos pasos para finalizar la compra</h2>
-        <section
-        id="quintofondo">
-        <img src="../assets/img/carrito.JPG" width="300px" alt="carrito">
-
+        <section id="quintofondo">
+            <img src="../assets/img/carrito.JPG" class="img-fluid rounded shadow" alt="carrito">
         </section>
-    </main> 
+    </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

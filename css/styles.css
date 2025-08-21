@@ -1,9 +1,14 @@
-/*Reseteo css*/
+/* Reseteo de css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body {text-align: center;
+body {
+    text-align: center;
     background-size: contain;
     background-color: rgb(183, 138, 224);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    margin: 0;
 }
 
 @font-face {
@@ -15,80 +20,110 @@ h1 {
     color: rgb(131, 54, 167);
 }
 
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: oblique;
 }
 
+
 ul {
     list-style: none;
+    padding: 0;
 }
 
 li>a {
-    color:rgb(55, 111, 214);
+    color: rgb(55, 111, 214);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 8px 12px;
+    display: block;
 }
 
+/* Fondo de inicio */
 #primerfondo {
     background-image: url(../assets/img/inicio.JPG);
-    height: 400px;
+    height: 600px;
+    margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+/* Iconos */
 .fa-whatsapp {
-    color:rgb(7, 151, 2);
-    font-size: 20px;
+    color: rgb(7, 151, 2);
+    font-size: 24px;
 }
 
 .fa-instagram {
-color: rgb(165, 122, 42);
-font-size: 20px;
+    color: rgb(165, 122, 42);
+    font-size: 24px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    width: 70%;
-}
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 150px;
-}
-
-header,footer {
+/* Encabezado y pie */
+header, footer {
     background-color: rgb(132, 54, 167);
 }
 
-header {
-    margin: 5px;
-    padding: 5px;
-    border: 3px rgb(55, 111, 214) solid;
-}
-
+/* Grid catalogo */
 .gridArea {
     display: grid;
-    grid-template-columns: repeat(5, 1.5fr);
-    grid-template-rows: repeat(2, 1.5fr);
-    grid-template-areas:
-     "iphone12 iphone13 iphone13promax iphone13rojo"
-     "samsung22ultra samsungnote20ultra samsung23ultra samsung24ultra samsungfold4";
-    width: 80vw;
-    height: 70vh;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 90%;
     margin: auto;
     position: relative;
     background-color: rgb(55, 111, 214);
-    padding: 5px;
+    padding: 10px;
     justify-items: center;
     align-items: center;
+}
+
+/* Ajuste imagenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gridArea {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #primerfondo {
+        height: 250px;
+        background-size: cover;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    li > a {
+        font-size: 16px;
+    }
+
+    header img {
+        max-width: 60px;
+    }
+
+    #primerfondo {
+        height: 180px;
+    }
+
+    .gridArea {
+        grid-template-columns: 1fr;
+    }
 }
