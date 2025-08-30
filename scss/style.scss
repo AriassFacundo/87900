@@ -13,6 +13,11 @@ $tipografia-secund: 'Roboto-Bold', sans-serif;
     box-sizing: border-box;
 }
 
+/*extend*/
+%iconos-redes {
+    font-size: 30px;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -42,7 +47,7 @@ body {
 
 #primerfondo {
     background-image: url(../assets/img/inicio.JPG);
-    height: 600px;
+    height: 400px;
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,14 +58,29 @@ header, footer {
     background-color: rgb(132, 54, 167);
 }
 
-.fa-whatsapp {
-    color: rgb(7, 151, 2);
-    font-size: 30px;
+.fa-facebook {
+    @extend %iconos-redes;
+    color: rgb(55, 111, 214);
 }
 
-.fa-instagram {
-    color: rgb(165, 122, 42);
-    font-size: 30px;
+.fa-whatsapp { 
+    @extend %iconos-redes;
+    color: rgb(7, 151, 2);
+   
+}
+
+.fa-instagram { 
+    @extend %iconos-redes;
+    color: rgb(255, 69, 171);
+   
+}
+
+.img-scale {
+    transition: transform 0.3 ease;
+}
+
+.img-scale:hover {
+    transform: scale(1.5, 1.5);
 }
 
 .gridArea {
