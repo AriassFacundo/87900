@@ -1,36 +1,17 @@
-/* Reseteo de css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: "Roboto-Bold", sans-serif;
     src: url(../assets/fonts/Roboto-Bold.ttf);
 }
+
+$tipografia-ppal:'Poppins', sans-serif;
+$tipografia-secund: 'Roboto-Bold', sans-serif;
+
 * {
     padding: auto;
     margin: auto;
     box-sizing: border-box;
 }
-
-body {
-    text-align: center;
-    background-size: contain;
-    background-color: rgb(183, 138, 224);
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: oblique;
-    margin: 0;
-}
-
-h1 {
-    color: rgb(131, 54, 167);
-}
-
-
-body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: oblique;
-}
-
 
 ul {
     list-style: none;
@@ -45,7 +26,20 @@ li>a {
     display: block;
 }
 
-/* Fondo de inicio */
+h1 {
+    color: rgb(131, 54, 167);
+}
+
+body {
+    text-align: center;
+    background-size: contain;
+    background-color: rgb(183, 138, 224);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    margin: 0;
+}
+
 #primerfondo {
     background-image: url(../assets/img/inicio.JPG);
     height: 600px;
@@ -55,7 +49,10 @@ li>a {
     background-size: contain;
 }
 
-/* Iconos */
+header, footer {
+    background-color: rgb(132, 54, 167);
+}
+
 .fa-whatsapp {
     color: rgb(7, 151, 2);
     font-size: 30px;
@@ -66,12 +63,6 @@ li>a {
     font-size: 30px;
 }
 
-/* Encabezado y pie */
-header, footer {
-    background-color: rgb(132, 54, 167);
-}
-
-/* Grid catalogo */
 .gridArea {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -85,13 +76,12 @@ header, footer {
     align-items: center;
 }
 
-/* Ajuste imagenes */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Responsive */
+/*Inicio Desktop*/
 @media (max-width: 992px) {
     nav ul {
         flex-direction: column;
@@ -114,6 +104,7 @@ img {
     }
 }
 
+/*Inicio Mobile*/
 @media (max-width: 576px) {
     li > a {
         font-size: 16px;
@@ -123,11 +114,12 @@ img {
         max-width: 60px;
     }
 
+    .gridArea {
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
     #primerfondo {
         height: 180px;
     }
 
-    .gridArea {
-        grid-template-columns: 1fr;
-    }
 }

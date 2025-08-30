@@ -1,14 +1,5 @@
 /* Reseteo de css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-    font-family: "Roboto-Bold", sans-serif;
-    src: url(../assets/fonts/Roboto-Bold.ttf);
-}
-* {
-    padding: auto;
-    margin: auto;
-    box-sizing: border-box;
-}
 
 body {
     text-align: center;
@@ -18,6 +9,11 @@ body {
     font-weight: 600;
     font-style: oblique;
     margin: 0;
+}
+
+@font-face {
+    font-family: "Roboto-Bold", sans-serif;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
 }
 
 h1 {
@@ -58,12 +54,12 @@ li>a {
 /* Iconos */
 .fa-whatsapp {
     color: rgb(7, 151, 2);
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .fa-instagram {
     color: rgb(165, 122, 42);
-    font-size: 30px;
+    font-size: 24px;
 }
 
 /* Encabezado y pie */

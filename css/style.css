@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Roboto-Bold", sans-serif;
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+* {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li > a {
+  color: rgb(55, 111, 214);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  display: block;
+}
+
+h1 {
+  color: rgb(131, 54, 167);
+}
+
+body {
+  text-align: center;
+  background-size: contain;
+  background-color: rgb(183, 138, 224);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  margin: 0;
+}
+
+#primerfondo {
+  background-image: url(../assets/img/inicio.JPG);
+  height: 600px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header, footer {
+  background-color: rgb(132, 54, 167);
+}
+
+.fa-whatsapp {
+  color: rgb(7, 151, 2);
+  font-size: 30px;
+}
+
+.fa-instagram {
+  color: rgb(165, 122, 42);
+  font-size: 30px;
+}
+
+.gridArea {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  background-color: rgb(55, 111, 214);
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Inicio Desktop*/
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .gridArea {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #primerfondo {
+    height: 250px;
+    background-size: cover;
+    margin: auto;
+  }
+}
+/*Inicio Mobile*/
+@media (max-width: 576px) {
+  li > a {
+    font-size: 16px;
+  }
+  header img {
+    max-width: 60px;
+  }
+  .gridArea {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #primerfondo {
+    height: 180px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
