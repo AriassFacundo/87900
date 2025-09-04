@@ -4,6 +4,7 @@
     src: url(../assets/fonts/Roboto-Bold.ttf);
 }
 
+/*Variables*/
 $tipografia-ppal:'Poppins', sans-serif;
 $tipografia-secund: 'Roboto-Bold', sans-serif;
 
@@ -13,7 +14,7 @@ $tipografia-secund: 'Roboto-Bold', sans-serif;
     box-sizing: border-box;
 }
 
-/*extend*/
+/*Extend*/
 %iconos-redes {
     font-size: 30px;
 }
@@ -24,7 +25,7 @@ ul {
 }
 
 li>a {
-    color: rgb(55, 111, 214);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
     padding: 8px 12px;
@@ -32,13 +33,13 @@ li>a {
 }
 
 h1 {
-    color: rgb(131, 54, 167);
+    color: rgb(168, 83, 119);
 }
 
 body {
     text-align: center;
     background-size: contain;
-    background-color: rgb(183, 138, 224);
+    background-color: rgb(168, 83, 119);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: oblique;
@@ -47,7 +48,16 @@ body {
 
 #primerfondo {
     background-image: url(../assets/img/inicio.JPG);
-    height: 400px;
+    height: 500px;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#quintofondo {
+    background-image: url(../assets/img/iphone14promax.JPG.jpg);
+    height: 500px;
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +65,7 @@ body {
 }
 
 header, footer {
-    background-color: rgb(132, 54, 167);
+    background-color: rgb(119, 19, 61);
 }
 
 .fa-facebook {
@@ -71,16 +81,16 @@ header, footer {
 
 .fa-instagram { 
     @extend %iconos-redes;
-    color: rgb(255, 69, 171);
+    color: rgb(201, 19, 95);
    
 }
 
+/*Ejemplo Anidacion*/
 .img-scale {
     transition: transform 0.3 ease;
-}
-
-.img-scale:hover {
-    transform: scale(1.5, 1.5);
+    &:hover {
+        transform: scale(1.5, 1.5);
+    }
 }
 
 .gridArea {
@@ -90,7 +100,7 @@ header, footer {
     width: 90%;
     margin: auto;
     position: relative;
-    background-color: rgb(55, 111, 214);
+    background-color: rgb(80, 80, 80);
     padding: 10px;
     justify-items: center;
     align-items: center;
@@ -99,6 +109,10 @@ header, footer {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.btn-pri {
+    background-color: rgb(119, 19, 61);
 }
 
 /*Inicio Desktop*/
