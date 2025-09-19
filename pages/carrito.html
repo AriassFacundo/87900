@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><meta name="description" content="Carrito para finalizar compra">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
@@ -15,8 +15,10 @@
 <body>
     <header class="container-fluid d-flex flex-wrap justify-content-between align-items-center p-2">
         <div class="d-flex gap-2">
-            <img src="../assets/img/apple.JPG.webp" class="img-fluid" alt="Logo Apple" style="max-width: 80px;">
-            <img src="../assets/img/samsung.JPG.avif" class="img-fluid" alt="Logo Samsung" style="max-width: 80px;">
+        <a href="../index.html">    
+            <img src="../assets/img/apple.webp" class="img-fluid" alt="Logo Apple" style="max-width: 80px;">
+            <img src="../assets/img/samsung.AVIF" class="img-fluid" alt="Logo Samsung" style="max-width: 80px;">
+        </a>
         </div>
         <nav>
             <ul class="d-flex flex-wrap justify-content-center p-0 m-0">
@@ -31,18 +33,49 @@
 
     <main class="container text-center">
         <h1>Mi Carrito</h1>
-        <h2>Ultimos pasos para finalizar la compra</h2>
+        <h2>¡Ultimos pasos para finalizar la compra!</h2>
+        <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="validationCustom01" required>
+    <div class="valid-feedback">
+      Completado!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="validationCustom02" required>
+    <div class="valid-feedback">
+      Completado!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Email</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Escoge el nombre de usuario.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Ciudad</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+    </div>
         <section id="quintofondo">
-            <!-- <img src="../assets/img/iphone14promax.JPG.jpg" width="300px" class="img-fluid rounded shadow" alt="iphone14promax"> -->
+            <img src="../assets/img/iphone15promax.jpg" width="400px" class="img-fluid rounded shadow" alt="iphone15promax">
         </section>
         <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn-pri" type="button">VOLVER</button>
-  <button class="btn-sec" type="button">SEGUIR COMPRANDO</button>
+   <a href="../index.html" class="btn btn-light mt-auto w-100" target="_blank">VOLVER</a>
+   <a href="../pages/catalogo.html" class="btn btn-secondary mt-auto w-100" target="_blank">SEGUIR COMPRANDO</a>
 </div>
     </main>
 
     <footer class="text-center p-3">
         <div class="iconos-redes">
+            <h3>¡Seguinos en nuestras redes!</h3>
             <a href="https://www.facebook.com/zelu.nqn" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/zelu.nqn" target="_blank"><i class="fa-brands fa-instagram"></i></a>

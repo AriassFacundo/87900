@@ -46,24 +46,6 @@ body {
     margin: 0;
 }
 
-#primerfondo {
-    background-image: url(../assets/img/inicio.JPG);
-    height: 500px;
-    margin: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#quintofondo {
-    background-image: url(../assets/img/iphone14promax.JPG.jpg);
-    height: 500px;
-    margin: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 header, footer {
     background-color: rgb(119, 19, 61);
 }
@@ -93,26 +75,41 @@ header, footer {
     }
 }
 
-.gridArea {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    width: 90%;
-    margin: auto;
-    position: relative;
-    background-color: rgb(80, 80, 80);
-    padding: 10px;
-    justify-items: center;
-    align-items: center;
+.grid-Area {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 10px;
+   position: relative;
+   margin: auto;
+   padding: 10px;
+   justify-items: center;
+   align-items: center;
+   background-color: rgb(80, 80, 80);
+}
+
+p {
+    color: white;
+    font-size: small;
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.btn-pri {
+.img-scale {
+    width: 100%;
+}
+
+.btn-light {
     background-color: rgb(119, 19, 61);
+    border-color: black;
+}
+
+.btn-secondary {
+    background-color:  rgb(80, 80, 80);
+    border-color: black;
 }
 
 /*Inicio Desktop*/
@@ -127,15 +124,10 @@ img {
         text-align: center;
     }
 
-    .gridArea {
+    .grid-Area {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #primerfondo {
-        height: 250px;
-        background-size: cover;
-        margin: auto;
-    }
 }
 
 /*Inicio Mobile*/
@@ -148,12 +140,8 @@ img {
         max-width: 60px;
     }
 
-    .gridArea {
+    .grid-Area {
         grid-template-columns: repeat(2 ,1fr);
-    }
-
-    #primerfondo {
-        height: 180px;
     }
 
 }
